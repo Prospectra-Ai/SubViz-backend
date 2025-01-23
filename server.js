@@ -51,7 +51,7 @@ app.get("/api/search", async (req, res) => {
       q, // The keyword to search
       sort: "relevance", // Sort by new posts
       limit: "25", // Limit the number of posts
-      t: "week", // Posts from the last week
+      t: "all", // Posts from the last week
     });
 
     // Fetch data from the Reddit API
