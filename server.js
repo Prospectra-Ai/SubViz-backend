@@ -49,7 +49,7 @@ app.get("/api/search", async (req, res) => {
     // Create the query string for the Reddit API
     const params = new URLSearchParams({
       q, // The keyword to search
-      sort: "hot", // Sort by new posts
+      sort: "relevance", // Sort by new posts
       limit: "25", // Limit the number of posts
       t: "week", // Posts from the last week
     });
