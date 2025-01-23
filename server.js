@@ -26,7 +26,7 @@ app.get("/api/search", async (req, res) => {
     // Fetch data from the Reddit API
     const response = await fetch(`${REDDIT_API_URL}?${params.toString()}`, {
       headers: {
-        "User-Agent": "SubViz/1.0", // Required header for Reddit API
+        "User-Agent": "subviz/1.0 by Difficult-Food479", // Required header for Reddit API
         Accept: "application/json",
       },
     });
